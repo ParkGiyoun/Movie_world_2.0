@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+.moviesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.moviesContainer .movieContainer {
+  margin: 30px;
+  width: 80%;
+  height: 500px;
+
+  background-color: white;
+
+  display: flex;
+
+  -webkit-box-shadow: 7px 8px 15px 0px rgba(150, 150, 150, 1);
+  -moz-box-shadow: 7px 8px 15px 0px rgba(150, 150, 150, 1);
+  box-shadow: 7px 8px 15px 0px rgba(150, 150, 150, 1);
+  border-radius: 10px;
+}
+
+.moviesContainer .movieContainer .posterContainer {
+  padding: 20px 20px 0 20px;
+  flex: 1 1 40%;
+}
+.moviesContainer .movieContainer .posterContainer img {
+  width: 100%;
+  max-height: 400px;
+}
+.moviesContainer .elementContainer {
+  padding: 20px 20px 0 20px;
+  flex: 1 1 60%;
+}
+
+.moviesContainer .elementContainer .titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.moviesContainer .elementContainer .titleContainer .title {
+  font-size: 30px;
+  color: black;
+}
+.moviesContainer .elementContainer .titleContainer .year {
+  font-size: 15px;
+  color: black;
+}
+.moviesContainer .elementContainer .summary {
+  font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .moviesContainer .elementContainer .summary {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .moviesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .moviesContainer .movieContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .moviesContainer .movieContainer .posterContainer {
+    width: 70%;
+  }
+
+  .moviesContainer .movieContainer {
+    height: initial;
+  }
+  .moviesContainer .elementContainer .summary {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}

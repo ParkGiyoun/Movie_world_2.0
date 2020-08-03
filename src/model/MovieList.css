@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+section i {
+  animation: rotating 0.7s linear infinite;
+  width: 100%;
+  text-align: center;
+
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.MovieOption {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  background-color: #d6ccff;
+}
+.MovieOption h5 {
+  font-size: 30px;
+
+  margin-right: 30px;
+  font-family: "Do Hyeon", sans-serif;
+}
+.MovieOption .MovieOptionSelect {
+  width: 30%;
+  height: 40px;
+  margin-right: 5px;
+  padding: 3px;
+
+  font-size: 20px;
+  font-family: "Do Hyeon", sans-serif;
+  background-color: #dfe6e9;
+  border: none;
+}
+.MovieOption .MovieSearchBtn {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 18px;
+
+  width: 80px;
+  padding: 7px 20px;
+  background-color: #dfe6e9;
+
+  border: none;
+  border-radius: 8px;
+}
+
+.moviesContainer {
+  width: 100%;
+  background-color: #dfe6e9;
+}
